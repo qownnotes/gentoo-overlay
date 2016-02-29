@@ -1,0 +1,15 @@
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+  <name><![CDATA[qownnotes-overlay]]></name>
+    <description>The qownnotes gentoo overlay</description>
+    <homepage>https://github.com/suhr/qownnotes-overlay</homepage>
+    <owner>
+      <name>Сухарик</name>
+      <email>suhr@i2pmail.org</email>
+    </owner>
+    <source type="git">https://github.com/suhr/qownnotes-overlay.git</source>
+    <feed>https://github.com/suhr/qownnotes-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
