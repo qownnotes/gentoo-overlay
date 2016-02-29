@@ -3,13 +3,13 @@
 <repositories xmlns="" version="1.0">
   <repo quality="experimental" status="unofficial">
   <name><![CDATA[qownnotes-overlay]]></name>
-    <description>The qownnotes gentoo overlay</description>
-    <homepage>https://github.com/suhr/qownnotes-overlay</homepage>
+    <description>The QOwnNotes gentoo overlay</description>
+    <homepage>https://github.com/pbek/qownnotes-overlay</homepage>
     <owner>
-      <name>Сухарик</name>
-      <email>suhr@i2pmail.org</email>
+      <name>Patrizio Bekerke</name>
+      <email>patrizio@bekerle.com</email>
     </owner>
-    <source type="git">https://github.com/suhr/qownnotes-overlay.git</source>
-    <feed>https://github.com/suhr/qownnotes-overlay/commits/master.atom</feed>
+    <source type="git">https://github.com/pbek/qownnotes-overlay.git</source>
+    <feed>https://github.com/pbek/qownnotes-overlay/commits/master.atom</feed>
   </repo>
 </repositories>
