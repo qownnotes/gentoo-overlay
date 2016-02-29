@@ -1,15 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
-
 <repositories xmlns="" version="1.0">
-  <repo quality="experimental" status="unofficial">
+  <repo priority="50" quality="experimental" status="unofficial">
   <name><![CDATA[qownnotes-overlay]]></name>
-    <description>The QOwnNotes gentoo overlay</description>
-    <homepage>https://github.com/pbek/qownnotes-overlay</homepage>
+    <description lang="en">The QOwnNotes gentoo overlay</description>
+    <homepage>http://www.qownnotes.org</homepage>
     <owner>
       <name>Patrizio Bekerle</name>
-      <email>patrizio@bekerle.com</email>
     </owner>
-    <source type="git">git://github.com/pbek/qownnotes-overlay.git</source>
+    <source type="git">https://github.com/pbek/qownnotes-overlay.git</source>
     <feed>https://github.com/pbek/qownnotes-overlay/commits/master.atom</feed>
   </repo>
 </repositories>
