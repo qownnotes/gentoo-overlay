@@ -6,7 +6,7 @@
     <description>The QOwnNotes gentoo overlay</description>
     <homepage>https://github.com/pbek/qownnotes-overlay</homepage>
     <owner>
-      <name>Patrizio Bekerke</name>
+      <name>Patrizio Bekerle</name>
       <email>patrizio@bekerle.com</email>
     </owner>
     <source type="git">https://github.com/pbek/qownnotes-overlay.git</source>
