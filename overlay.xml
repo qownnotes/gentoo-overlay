@@ -9,7 +9,7 @@
       <name>Patrizio Bekerle</name>
       <email>patrizio@bekerle.com</email>
     </owner>
-    <source type="git">https://github.com/pbek/qownnotes-overlay.git</source>
+    <source type="git">git://github.com/pbek/qownnotes-overlay.git</source>
     <feed>https://github.com/pbek/qownnotes-overlay/commits/master.atom</feed>
   </repo>
 </repositories>
