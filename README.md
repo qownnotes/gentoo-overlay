@@ -9,7 +9,7 @@ This is a Gentoo overlay for [QOwnNotes](http://www.qownnotes.org), the open sou
 Add and install QOwnNotes with *layman*.
 
 ```bash
-layman -f -a qownnotes-overlay -o https://raw.githubusercontent.com/pbek/qownnotes-overlay/master/overlay.xml<br />
+layman -f -a qownnotes-overlay -o https://raw.githubusercontent.com/pbek/qownnotes-overlay/master/overlay.xml
 emerge qownnotes
 ```
 
