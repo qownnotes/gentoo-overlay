@@ -4,6 +4,17 @@ This is a Gentoo overlay for [QOwnNotes](http://www.qownnotes.org), the open sou
 
 ## Usage
 
+### layman
+
+Add and install QOwnNotes with *layman*.
+
+```bash
+layman -f -a qownnotes-overlay -o https://raw.githubusercontent.com/pbek/qownnotes-overlay/master/overlay.xml<br />
+emerge qownnotes
+```
+
+### direct
+
 To create a configuration file for the QOwnNotes overlay you have to run these commands as root.
 
 ```bash
