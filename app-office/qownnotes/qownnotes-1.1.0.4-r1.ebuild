@@ -3,20 +3,22 @@
 # $Id$
 
 #
-# QOwnNotes 16.06.0
+# QOwnNotes 1.1.0.4
 #
 
 EAPI=5
 
 inherit qmake-utils eutils
 
-DESCRIPTION="A plain-text file notepad with markdown support and (optional) ownCloud integration"
+DESCRIPTION="A plain-text file notepad with markdown support and ownCloud/NC integration"
 HOMEPAGE="http://www.qownnotes.org/"
-SRC_URI="http://downloads.sourceforge.net/project/${PN}/src/${P}.tar.xz"
+MY_P="e68eff27765394e5ecab187f36cdb17dd8c87feb"
+SRC_URI="https://github.com/pbek/QOwnNotes/archive/${MY_P}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/QOwnNotes-${MY_P}"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="
@@ -26,21 +28,35 @@ DEPEND="
 	dev-qt/qtsql:5
 	dev-qt/qtsvg:5
 	dev-qt/qtnetwork:5
-	dev-qt/qtdeclarative:5
-	dev-qt/qtxml:5
+	dev-qt/qtscript:5
 	dev-qt/qtprintsupport:5
 "
 RDEPEND="${DEPEND}"
 
 src_prepare() {
+	cd src
+	echo "#define VERSION \"1.1.0.4\"" > version.h
 	echo "#define RELEASE \"Gentoo\"" > release.h
+
+	cd libraries
+	rmdir qmarkdowntextedit piwikitracker
+	git clone https://github.com/pbek/qmarkdowntextedit.git
+	cd qmarkdowntextedit
+	git checkout 99a44cdab26b18300895af4fbe6e4c2fb7b621aa
+	cd ..
+	git clone https://github.com/pbek/qt-piwik-tracker.git piwiktracker
+	cd piwiktracker
+	git checkout 656771e33fd4af5039b5cf9131a958fd3a4dfd41
+	cd ..
 }
 
 src_compile() {
+	cd src
 	eqmake5 QOwnNotes.pro -r
 }
 
 src_install() {
+	cd src
 	emake
 	dobin QOwnNotes
 
