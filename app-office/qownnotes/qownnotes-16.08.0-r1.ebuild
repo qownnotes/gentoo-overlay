@@ -3,14 +3,14 @@
 # $Id$
 
 #
-# QOwnNotes 16.10.0
+# QOwnNotes 16.08.0
 #
 
 EAPI=5
 
 inherit qmake-utils eutils
 
-DESCRIPTION="A plain-text file notepad with markdown support and (optional) ownCloud integration"
+DESCRIPTION="A plain-text file notepad with markdown support and ownCloud/NC integration"
 HOMEPAGE="http://www.qownnotes.org/"
 SRC_URI="http://downloads.sourceforge.net/project/${PN}/src/${P}.tar.xz"
 
@@ -28,7 +28,6 @@ DEPEND="
 	dev-qt/qtnetwork:5
 	dev-qt/qtdeclarative:5
 	dev-qt/qtxml:5
-	dev-qt/qtxmlpatterns:5
 	dev-qt/qtprintsupport:5
 "
 RDEPEND="${DEPEND}"

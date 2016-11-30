@@ -3,18 +3,18 @@
 # $Id$
 
 #
-# QOwnNotes 16.05.0
+# QOwnNotes 1.3.0
 #
 
 EAPI=5
 
 inherit qmake-utils eutils
 
-DESCRIPTION="A plain-text file notepad with markdown support and (optional) ownCloud integration"
+DESCRIPTION="A plain-text file notepad with markdown support and ownCloud/NC integration"
 HOMEPAGE="http://www.qownnotes.org/"
 
-MY_P="e018b9546bb4a35c34d2e93f358287aa7a564905"
-MY_QMDTE="b31976d2803f12504dca08aaf8b312ab306b46a5"
+MY_P="51c87ccb75e3df8209d164c7169caec3d6ebf290"
+MY_QMDTE="a2569fcad3eef008f698dfec4db35386acafddba"
 MY_PWT="656771e33fd4af5039b5cf9131a958fd3a4dfd41"
 SRC_URI="https://github.com/pbek/QOwnNotes/archive/${MY_P}.tar.gz -> ${P}.tar.gz
 	https://github.com/pbek/qmarkdowntextedit/archive/${MY_QMDTE}.tar.gz -> qmarkdowntextedit-${MY_QMDTE}.tar.gz
@@ -54,7 +54,7 @@ src_unpack() {
 
 src_prepare() {
 	cd src
-	echo "#define VERSION \"16.05.0\"" > version.h
+	echo "#define VERSION \"1.3.0\"" > version.h
 	echo "#define RELEASE \"Gentoo\"" > release.h
 }
 
