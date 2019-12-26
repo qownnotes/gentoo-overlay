@@ -6,7 +6,7 @@
 # QOwnNotes 16.06.0
 #
 
-EAPI=5
+EAPI=7
 
 inherit qmake-utils eutils
 
@@ -34,6 +34,7 @@ RDEPEND="${DEPEND}"
 
 src_prepare() {
 	echo "#define RELEASE \"Gentoo\"" > release.h
+	default
 }
 
 src_compile() {
