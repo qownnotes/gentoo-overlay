@@ -6,7 +6,7 @@
 # QOwnNotes 1.1.0.4
 #
 
-EAPI=5
+EAPI=7
 
 inherit qmake-utils eutils
 
@@ -37,6 +37,7 @@ src_prepare() {
 	cd src
 	echo "#define VERSION \"1.1.0.4\"" > version.h
 	echo "#define RELEASE \"Gentoo\"" > release.h
+	default
 
 	cd libraries
 	rmdir qmarkdowntextedit piwikitracker

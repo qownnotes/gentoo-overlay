@@ -37,6 +37,7 @@ RDEPEND="${DEPEND}"
 src_prepare() {
 	echo "#define RELEASE \"Gentoo\"" > release.h
 	default
+	default
 }
 
 src_compile() {
