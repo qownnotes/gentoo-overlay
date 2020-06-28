@@ -8,7 +8,7 @@
     <owner>
       <name>Patrizio Bekerle</name>
     </owner>
-    <source type="git">https://github.com/pbek/qownnotes-overlay.git</source>
-    <feed>https://github.com/pbek/qownnotes-overlay/commits/master.atom</feed>
+    <source type="git">https://github.com/qownnotes/gentoo-overlay.git</source>
+    <feed>https://github.com/qownnotes/gentoo-overlay/commits/master.atom</feed>
   </repo>
 </repositories>
