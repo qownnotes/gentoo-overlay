@@ -9,7 +9,7 @@ This is a Gentoo overlay for [QOwnNotes](http://www.qownnotes.org), the open sou
 Add and install QOwnNotes with *layman*.
 
 ```bash
-layman -f -a qownnotes-overlay -o https://raw.githubusercontent.com/pbek/qownnotes-overlay/master/overlay.xml
+layman -f -a qownnotes-overlay -o https://raw.githubusercontent.com/qownnotes/gentoo-overlay/master/overlay.xml
 emerge qownnotes
 ```
 
@@ -28,7 +28,7 @@ Add these lines to the file:
 [qownnotes-overlay]
 location = /usr/local/portage/qownnotes-overlay
 sync-type = git
-sync-uri = https://github.com/pbek/qownnotes-overlay.git
+sync-uri = https://github.com/qownnotes/gentoo-overlay.git
 ```
 
 Then you should be able to install QOwnNotes from the overlay.
