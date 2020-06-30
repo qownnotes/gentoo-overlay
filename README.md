@@ -4,16 +4,16 @@ This is a Gentoo overlay for [QOwnNotes](http://www.qownnotes.org), the open sou
 
 ## Usage
 
-Add the QOwnNotes repository with the following command.
+Add the QOwnNotes repository with the following command (see [eselect-repository](https://wiki.gentoo.org/wiki/Eselect/Repository).
 
 ```bash
-eselect repository enable qownnotes-overlay
+sudo eselect repository enable qownnotes-overlay
 ```
 
 Then you can install QOwnNotes the usual way.
 
 ```bash
-emerge --sync qownnotes-overlay && emerge -av qownnotes
+sudo emerge --sync qownnotes-overlay && sudo emerge -av qownnotes
 ```
 
 If you run into troubles with libpcre you might have to do a `env USE=pcre16 emerge -1 libpcre`.
