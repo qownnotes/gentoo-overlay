@@ -4,7 +4,7 @@ This is a Gentoo overlay for [QOwnNotes](http://www.qownnotes.org), the open sou
 
 ## Usage
 
-Add the QOwnNotes repository with the following command (see [eselect-repository](https://wiki.gentoo.org/wiki/Eselect/Repository).
+Add the QOwnNotes repository with the following command (see [eselect-repository](https://wiki.gentoo.org/wiki/Eselect/Repository)).
 
 ```bash
 sudo eselect repository enable qownnotes-overlay
